@@ -17,7 +17,7 @@ public class AutoPayoutScheduler {
     }
 
     //Adjust here to get check if auto pay works
-//    @Scheduled(fixedRate = 20000)
+    @Scheduled(fixedRate = 180000) // 3 minutes
     @Transactional
     public void run() {
         System.out.println("=== Running scheduled payout ===");
