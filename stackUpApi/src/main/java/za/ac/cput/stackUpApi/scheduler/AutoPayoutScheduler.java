@@ -16,7 +16,7 @@ public class AutoPayoutScheduler {
         this.poolService = poolService;
     }
 
-    //Adjust here to get check if auto pay works
+    //Adjust here to get check if auto pay
     @Scheduled(fixedRate = 180000) // 3 minutes
     @Transactional
     public void run() {
